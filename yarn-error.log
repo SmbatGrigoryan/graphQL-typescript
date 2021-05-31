@@ -1,0 +1,55 @@
+Arguments: 
+  /home/beeweb/.nvm/versions/node/v14.5.0/bin/node /usr/share/yarn/bin/yarn.js start
+
+PATH: 
+  /home/beeweb/.nvm/versions/node/v14.5.0/bin:/home/beeweb/WebstormProjects/GraphQL_TypeScript/node_modules/.bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+
+Yarn version: 
+  1.22.5
+
+Node version: 
+  14.5.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  SyntaxError: /home/beeweb/WebstormProjects/GraphQL_TypeScript/package.json: Unexpected token } in JSON at position 174
+      at JSON.parse (<anonymous>)
+      at /usr/share/yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/share/yarn/lib/cli.js:310:30)
+      at /usr/share/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "lireddit-server",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "start": "ts-node src/index.ts",
+      "watch": "tsc -w",
+  
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+      "ts-node": "^10.0.0"
+    },
+    "dependencies": {},
+    "mikro-orm": {
+      "useTsNode": true,
+      "configPaths": [
+        "./src/mikro-orm.config.ts",
+        "./dist/mikro-orm.config.js"
+      ]
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
